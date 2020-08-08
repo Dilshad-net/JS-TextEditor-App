@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: content-box;
+}
+
+section {
+  margin-top: 1%;
+  margin-left: 1.5%;
+  border: 1px dotted gold;
+  border-radius: 5px;
+  width: 95vw;
+  height: 300px;
+}
+
+.header {
+  border-bottom: none;
+  padding: 1rem;
+  background-color: rgb(40, 110, 89);
+  color: gold;
+  border-radius: 5px 5px 0 0;
+  width: 95vw;
+}
+
+.content {
+  border: 0.5rem solid silver;
+  height: 50vh;
+  width: 96vw;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  background-color: gold;
+  scroll-behavior: smooth;
+}
+
+.header button {
+  color: black;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1%;
+}
+
+button:hover {
+  background-color: rgba(20, 90, 70);
+  transition: all 0.2s linear 0s;
+}
+
+input[type="color"] {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

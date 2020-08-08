@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Rish Txt App">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Dilshad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="world-wide-web.png" />
+  <script defer src="script.js" charset="utf-8"></script>
+  <title></title>
+</head>
+
+<body>
+  <section>
+    <div class="header" id="theRibbon">
+      <button type="button" id="boldButton" name="Bold" title="TextBold"><b>B</b></button>
+      <button type="button" id="italicButton" name="Italic" title="TextItalic"><i>I</i></button>
+      <button type="button" id="underLine" name="Underline" title="TextUnderline"><u>U</u></button>
+      <button type="button" id="supButton" name="Superscript" title="Superscript">2<sup>x</sup></button>
+      <button type="button" id="subButton" name="Subscript" title="subScript">O<sub>x</sub></button>
+      <button type="button" id="strikeButton" name="Strikethrough" title="TextLine-through"><s>abc</s></button>
+      <button type="button" id="orderedList" name="Ordered" title="List Order">(i)</button>
+      <button type="button" id="unOrdered" name="Unordered" title="Bulleted">&bull;</button>
+      <input type="color" id="fontColor" name="Fontcolor" title="Font Colour">
+      <input type="color" id="highLight" name="Highlight" title="HighLight Colour">
+      <select id="fontSelector" name="Fontselector">
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Monospace">Monospace</option>
+        <option value="Sans-Serif">Sans-Serif</option>
+        <option value="Cursive">Cursive</option>
+        <option value="Consolas">Consolas</option>
+        <option value="Calibri">Calibri</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Marriage">Marriage</option>
+      </select>
+      <select id="fontSizor" name="Fontsizer">
+        <script type="text/javascript">
+          for (var i = 1; i <= 10; i++) {
+            document.write("<option value='" + i + "'>" + i + "</option>");
+          }
+        </script>
+      </select>
+      <button type="button" id="linkButton" name="Link" title="Link it"><u>Link</u></button>
+      <button type="button" id="unLink" name="Unlink" title="Un-Link">Un<u>link</u></button>
+      <button type="button" id="unDo" name="Undo" title="UNDO">&larr;</button>
+      <button type="button" id="reDo" name="Redo" title="REDO">&rarr;</button>
+    </div>
+    <div class="content" id="richTextArea">
+      <iframe src="" id="theWYSIWYG" name="theWYSIWYG" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    var fontSelect = document.querySelectorAll("select#fontSelector > option");
+    for (var i = 0; i < fontSelect.length; i++) {
+      fontSelect[i].style.fontFamily = fontSelect[i].value;
+    }
+
+    var fontSize = document.querySelectorAll("select#fontSizor > option");
+    for (var i = 0; i < fontSize.length; i++) {
+      fontSize[i].style.fontsize = fontSize[i].value;
+    }
+  </script>
+</body>
+
+</html>
